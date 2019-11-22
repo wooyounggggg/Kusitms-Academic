@@ -1,50 +1,11 @@
 @import "reset.css";
+@import "header.css";
+@import "font.css";
 
 a {
   text-decoration: none;
-  color: black;
 }
+
 body {
   height: 2000px;
-}
-.top-nav {
-  background-color: #ffffff;
-  position: fixed;
-  top: 350px;
-  width: 100%;
-}
-
-#with-logo {
-  position: fixed;
-}
-
-.centered {
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-.fixed {
-  position: fixed;
-}
-
-nav > ul {
-  display: flex;
-  justify-content: space-between;
-  font-size: 25px;
-}
-
-nav > ul :hover {
-  background-color: #4a8161;
-  color: white;
-}
-
-nav > ul > li {
-  list-style: none;
-  padding: 25px 150px;
-  text-align: center;
-  width: 100%;
-  margin: 0;
-}
-li.selected {
-  background-color: #5db07f;
-  color: white;
 }
