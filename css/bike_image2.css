@@ -1,0 +1,43 @@
+.font-nanum-square {
+  background-color: #60be89;
+}
+.seoul {
+  /*border : 1px dotted black;*/
+  width: 326.25px;
+  height: 237.75px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.login-icon {
+  /*border : 1px dotted black;*/
+  width: 237.75px;
+  height: 237.75px;
+  position: absolute;
+  top: 7%;
+  right: 5%;
+}
+.bike {
+  /*border : 1px dotted black;*/
+  width: 620px;
+  height: 365.61px;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+}
+.together {
+  /*border : 1px dotted black;*/
+  width: 1029px;
+  height: 269px;
+  position: absolute;
+  bottom: 10%;
+  left: 25%;
+}
+.bottom-icon {
+  /*border : 1px dotted black;*/
+  width: 93.29px;
+  height: 35.3px;
+  position: absolute;
+  bottom: 2%;
+  left: 49%;
+}

@@ -4,212 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/style.css">
-    <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-            crossorigin="anonymous"
-        />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>함께타요 따릉이 2.0</title>
+    <link rel="stylesheet" href="./css/bike_image.css">
+    <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="logo-animation">
-            <a href="./index.html"><img src="./picture/logo.png" alt="" class= "centered" id="with-logo"></a>
+    <div id="introduction">
+        <span class="bold">
+        커뮤니티</span>로<br>
+        소통하고,<br>
+        <br>
+        <span class="bold">크루</span>와<br>
+        함께 타는
         </div>
-        <div>
-            <nav class="top-nav centered">
-                <ul class="font-nacnum-square">
-                    <a href="./borrow.html" class="top-nav-link">
-                        <li>
-                            대여하기
-                        </li>
-                    </a>
-                    <a href="road.html" class="top-nav-link">
-                        <li>
-                            따릉이 길찾기
-                        </li>
-                    </a>
-                    <a href="community.html" class="top-nav-link">
-                        <li>
-                            커뮤니티
-                        </li>
-                    </a>
-                    <a href="crew.html" class="top-nav-link">
-                        <li>
-                            따릉이 크루
-                        </li>
-                    </a>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <article>
-        <div class="font-nanum-square-round right-bar">
-            <div class="weather">
-                <script src="./js/index_mj.js"></script>
+    <a href="./login.html" title="로그인"><img id="login-icon" src="./picture/login-icon.png"></a>
+    <img id="logo" src="./picture/logo.png"><br><br>
+    <div id="sns">
+        <a href="https://www.facebook.com/seoulbike/" target="_blank"><img src="./picture/facebook.png"></a>
+        <a href="https://www.instagram.com/bikeseoul.page/" target="_blank"><img src="./picture/instagram.png"></a>
+        <a href="https://www.blog.naver.com" target="_blank"><img src="./picture/blog.png"></a>
+        <a href="https://www.youtube.com/channel/UCt6ExO7ld8X_kAjybR6p9mg" target="_blank"><img src="./picture/youtube.png"></a>
+    </div>
+    <a href=""><img id="bottom-icon" src="./picture/bottom-icon.png"></a>
 
-                <img class="min" />
-                <div style="display: inline-block; width:100px;">
-                    <span style="margin-left: 20px; margin-right:50px;">서울</span>
-                </div>
-                <div class="weatherImage" style="display: inline-block; ">
-                    <img src="./picture/sun.png" style="margin-top: 15px; margin-left: 50px;" width="60px" height="60px" />
-                </div>
-                <div style="display:inline-block; margin-right:20px; float:right;">
-                    <li style="list-style: none; font-size:10px; margin-bottom: 0px; color:white;">
-                        <div>미세먼지</div>
-                        <div>좋음</div>
-                    </li>
-                    <li class="temp" style="font-size:15px; list-style: none; margin-bottom: 10px;">
-                        10도씨
-                    </li>
-                    <li class="humi" style="font-size:15px; list-style: none; margin-bottom: 10px;">
-                        10%
-                    </li>
-                </div>
-            </div>
-        
-            <div class="font-nanum-square">
-                <div class="my-page">
-                    <p style="margin-left: 50px; font-size: 12px; margin-top:20px; font-weight: bold; color:#2E6D48">따릉따릉 등급</p>
-                    <br />
-
-                    <div id="test">
-                        <div style="display:inline-block; margin-left:15px; ">
-                            <img
-                                src="./picture/profilePicture.jpg"
-                                style="border-radius: 50%; border:3px solid #F1F1F1;"
-                                width="100px"
-                                height="100px"
-                                class="img-circle"
-                                alt="..."
-                            />
-                        </div>
-
-                        <div style="display:inline-block; ">
-                            <li style="list-style: none; font-size: 18px;font-weight: bolder; margin-bottom: 0px; color:white;">
-                                김따릉 님
-                            </li>
-                            <li style="font-size:10px; font-weight: bold; list-style: none; margin-bottom: 10px;">
-                                <button type="button" style="width:70px; height:20px;background-color: #3E8C5E; border:0; border-radius: 20px;">
-                                    내 정보
-                                </button>
-                            </li>
-                            <li style="font-size:10px; font-weight: bold;list-style: none; width: 100px; margin-bottom: 10px;">
-                                <button type="button" style="width:70px; height:20px;background-color: #3E8C5E;border:0;  border-radius: 20px;">
-                                    로그아웃
-                                </button>
-                            </li>
-                        </div>
-                    </div>
-
-                    <div class="list-group class font-nanum-square">
-                        <a href="#" class="right-bar-li list-group-item list-group-item-action list-group-item-success" style="background-color: #5DB07F; color:white;"
-                            >대여 현황<span style="float: right;">></span></a
-                        >
-                        <a href="#" class="right-bar-li list-group-item list-group-item-action list-group-item-success" style="background-color: #5DB07F; color:white;"
-                            >나의 이용권<span style="float: right;">></span></a
-                        >
-                        <a href="#" class="right-bar-li list-group-item list-group-item-action list-group-item-success" style="background-color: #5DB07F; color:white;"
-                            >나의 크루<span style="float: right;">></span></a
-                        >
-                        <a href="#" class="right-bar-li list-group-item list-group-item-action list-group-item-success" style="background-color: #5DB07F; color:white;"
-                            >내가 쓴 글<span style="float: right;">></span></a
-                        >
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bigbox font-nanum-square">
-            <img src="./picture/arrowbox.png" width="500px" height="70px">
-            <br>
-
-            <div>
-                <div class="box1_1"><span>이번 달 소비한 <span style="color:#5DB07F ;">kcal</span>는</span>
-                    <br><br>
-                    <img src="./picture/bob.png" width="211px" height="54.1px" style="margin-left: auto; margin-right:auto; display:block;">
-                </div>
-                <div class="box1_2"><span>이번 달 심은 <span style="color:#5DB07F;">나무</span>는</span>
-                    <br><br>
-                    <img src="./picture/tree.png" width="130px" height="59.63px" style="margin-left: auto; margin-right:auto; display:block;">
-                </div>
-            </div>
-            <br>
-
-
-            <div class="box2_1"><div style="position:relative; top:-85%;"><span>이번 달 감소시킨<span style="color:#5DB07F;"> 탄소의 양</span>은</span></div>
-                <br>
-                <img src="./picture/co2.png" width="154px" height="56px" style="margin-left: auto; margin-right:auto; position:absolute; top:37%;">
-            </div>
-            <div class="box2_2" ><span style="float:left; height:100px; line-height:90px;">기대수명은&nbsp;&nbsp;&nbsp;<span><img src="./picture/30.png" width="50px"></span>&nbsp;&nbsp;  분 연장되었습니다.</span>
-            </div>
-        </div>
-        <div>
-            <div>
-                <img src="./picture/ranking_title.png" class="ranking_title">
-            </div>
-            <div class="usingRanking font-nanum-square">
-                <div class="personalRanking">
-                    <div class="personalTitle">개인 순위</div>
-                        <ul class="personalList">
-                            <li class="rankname">1&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp거친남자</li>
-                            <li class="rankname">2&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp하케장</li>
-                            <li class="rankname">3&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp큐시즘 헬시즘</li>
-                            <li class="rankname">4&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp김따릉</li>
-                        </ul>
-                </div>
-                <hr>
-                <div class="crewRanking">
-                        <div class="crewTitle">크루 순위</div>
-                            <ul class="crewList">
-                                <li class="rankname">1&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp큐시즘 육룡이나르샤</li>
-                                <li class="rankname">2&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp큐시즘 몇시즘</li>
-                                <li class="rankname">3&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp큐시즘 레디큐</li>
-                            </ul>
-                    </div>
-            </div>
-        </div>
-        
-        <div id="idx-board">
-            <span></span>
-            <span></span>
-            <span></span>
-                <span class="index-board-child"> 
-                    <ul>
-                        <li class="index-board-title">
-                            <span class="index-board-title-color">크루</span> 커뮤니티
-                        <a href="" class="board-more" title="더 보기"><img class="plus" src="./picture/plus.png" ></a>
-                        </li>
-                        <li></li>
-                        <li>몇시즘vs헬시즘 따릉이 마라톤 대결</li>
-                        <li>이번주 큐시즘 따릉이 소모임은 반포한강공원에서!</li>
-                        <li>난지한강공원에서 함께 라이딩 하실 분 구합니다.</li>
-                    </ul>
-            </span>
-            <span></span>
-            <span></span>
-            <span class="index-board-child">
-                <ul>
-                    <li class="index-board-title">
-                        <span class="index-board-title-color">따릉이</span> 자유게시판 
-                        <a href="" class="board-more" title="더 보기"><img class="plus" src="./picture/plus.png" ></a>
-                    <li></li>
-                    <li>요즘 선유도공원 따릉이 정류소에 따릉이가 없네요.</li>
-                    <li>강북지역 따릉이 타기 좋은 곳 추천해주세요!</li>
-                    <li>따릉이 이용권 구매 질문 있어요!</li>
-                </ul>
-            </span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </article>
-    <footer>
-        <img src="./picture/footer.png" alt="" class="footer-img">
-    </footer>
 </body>
 </html>

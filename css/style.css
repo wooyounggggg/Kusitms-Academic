@@ -7,6 +7,7 @@
 @import "index_hr.css";
 @import "index_cy.css";
 @import "index_mj.css";
+@import "loginPage.css";
 
 a {
   text-decoration: none;
