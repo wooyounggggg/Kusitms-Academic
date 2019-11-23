@@ -1,0 +1,19 @@
+.map_borrow {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 80%;
+    align-self: center;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+.map_road {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 80%;
+    align-self: center;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}

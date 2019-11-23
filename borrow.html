@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>함께타요 따릉이 2.0</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="./index.html"><img src="./picture/logo.png" alt="" class= "centered" id="with-logo"></a>
+        </div>
+        <div>
+            <nav class="top-nav centered">
+                <ul class="font-nanum-square">
+                    <a href="./borrow.html" class="selected top-nav-link">
+                        <li>
+                            대여하기
+                        </li>
+                    </a>
+                    <a href="road.html" class="top-nav-link">
+                        <li>
+                            따릉이 길찾기
+                        </li>
+                    </a>
+                    <a href="community.html" class="top-nav-link">
+                        <li>
+                            커뮤니티
+                        </li>
+                    </a>
+                    <a href="crew.html" class="top-nav-link">
+                        <li>
+                            따릉이 크루
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <article>
+    <div id="map" class="map_borrow"></div>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=490dd2fc2b419f4c2e1e872154d43de3&libraries=services,clusterer,drawing"></script>
+	<script src="./js/map_borrow.js"></script>
+    </article>
+    <footer>
+        <img src="./picture/footer.png" alt="" class="footer-img">
+    </footer>
+</body>
+</html>

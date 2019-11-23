@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>오른쪽 바</title>
+    </head>
+    <body>
+        <div class="font-nanum-square-round">
+            <div class="weather">
+                <script src="./js/index_mj.js"></script>
+
+                <img class="min" />
+                <div style="display: inline-block; width:100px;">
+                    <span style="margin-left: 20px; margin-right:50px;">서울</span>
+                </div>
+                <div class="weatherImage" style="display: inline-block; ">
+                    <img src="./picture/sun.png" style="margin-top: 23px; margin-left: 50px;" width="60px" height="60px" />
+                </div>
+                <div style="display:inline-block; margin-top: 10px; margin-right:20px; float:right;">
+                    <li style="list-style: none; font-size:10px; margin-bottom: 20px; color:white;">
+                        미세먼지 <br />
+                        좋음
+                    </li>
+                    <li class="temp" style="font-size:15px; list-style: none; margin-bottom: 10px;">
+                        10도씨
+                    </li>
+                    <li class="humi" style="font-size:15px; list-style: none; margin-bottom: 10px;">
+                        10%
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div class="font-nanum-square">
+            <div class="my-page">
+                <p style="margin-left: 50px; font-size: 12px; margin-top:20px; font-weight: bold; color:#2E6D48">따릉따릉 등급</p>
+                <br />
+
+                <div id="test">
+                    <div style="display:inline-block; margin-left:15px; ">
+                        <img
+                            src="./picture/profilePicture.jpg"
+                            style="border-radius: 50%; border:3px solid #F1F1F1;"
+                            width="100px"
+                            height="100px"
+                            class="img-circle"
+                            alt="..."
+                        />
+                    </div>
+
+                    <div style="display:inline-block; ">
+                        <li style="list-style: none; font-size: 18px;font-weight: bolder; margin-bottom: 20px; color:white;">
+                            김따릉 님
+                        </li>
+                        <li style="font-size:10px; font-weight: bold; list-style: none; margin-bottom: 10px;">
+                            <button type="button" style="width:70px; height:20px;background-color: #3E8C5E; border:0; border-radius: 20px;">
+                                내 정보
+                            </button>
+                        </li>
+                        <li style="font-size:10px; font-weight: bold;list-style: none; width: 100px; margin-bottom: 10px;">
+                            <button type="button" style="width:70px; height:20px;background-color: #3E8C5E;border:0;  border-radius: 20px;">
+                                로그아웃
+                            </button>
+                        </li>
+                    </div>
+                </div>
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-success" style="background-color: #5DB07F;"
+                        >대여 현황<span style="float: right;">></span></a
+                    >
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-success" style="background-color: #5DB07F;"
+                        >나의 이용권<span style="float: right;">></span></a
+                    >
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-success" style="background-color: #5DB07F;"
+                        >나의 크루<span style="float: right;">></span></a
+                    >
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-success" style="background-color: #5DB07F;"
+                        >내가 쓴 글<span style="float: right;">></span></a
+                    >
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

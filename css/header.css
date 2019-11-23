@@ -5,12 +5,8 @@
     justify-content: center;
 }
 
-.test {
+.logo-animation {
     animation: bounce-top 1.7s forwards;
-}
-
-.logo-animation-wobble {
-    animation: wobble-ver-right 1s
 }
 
 /* ----------------------------------------------

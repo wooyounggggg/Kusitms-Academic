@@ -1,0 +1,77 @@
+.bigbox {
+    width: 1049px;
+    height: 403px;
+    background-color: #F1F1F1;
+    padding: 30px;
+    margin: 0px;
+    position: relative;
+    top: 17.6%;
+    font-weight: 800;
+    /*border:1px solid black;*/
+}
+
+/*화살표 박스 - 지금 에러남 아마도 position때문인 것 같아서 우선은 보류해놓음.*/
+/*.arrow_box {
+	position: relative;
+	background: #ffffff;
+}
+.arrow_box:after {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-left-color: #ffffff;
+	border-width: 50px;
+	margin-top: -50px;
+}*/
+
+.box1_1 {
+    float: left;
+    width: 300px;
+    height: 127.11px;
+    padding-left: 25px;
+    padding-top: 25px;
+    margin: 5px;
+    font-weight: 4em;
+    box-shadow: 0px 0px 2px 1px lightgray;
+    position: relative;
+}
+
+.box1_2 {
+    float: left;
+    width: 300px;
+    height: 127.11px;
+    padding-left: 25px;
+    padding-top: 25px;
+    margin: 5px;
+    box-shadow: 0px 0px 2px 1px lightgray;
+
+}
+
+.box2_1 {
+    width: 300px;
+    height: 127.11px;
+    padding-left: 25px;
+    padding-top: 25px;
+    margin: 5px;
+    box-shadow: 0px 0px 2px 1px lightgray;
+    position: relative;
+    top: 30%;
+}
+
+.box2_2 {
+    width: 300px;
+    height: 127.11px;
+    padding-left: 25px;
+    padding-top: 25px;
+    margin: 5px;
+    box-shadow: 0px 0px 2px 1px lightgray;
+    position: relative;
+    top: -8%;
+    left: 31.2%;
+}

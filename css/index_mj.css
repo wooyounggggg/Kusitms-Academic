@@ -1,0 +1,29 @@
+.weather {
+    background-color: #3e8c5e;
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 239px;
+    color: white;
+}
+
+.my-page {
+    background-color: #5db07f;
+    width: 300px;
+    height: 630px;
+    position: absolute;
+    right: 0;
+    top: 339px;
+}
+
+#test {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.right-bar {
+    display: relative;
+    top: 50%;
+}

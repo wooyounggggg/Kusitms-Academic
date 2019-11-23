@@ -1,11 +1,17 @@
 @import "reset.css";
 @import "header.css";
 @import "font.css";
+@import "footer.css";
+@import "map.css";
+@import "index_jw.css";
+@import "index_hr.css";
+@import "index_cy.css";
+@import "index_mj.css";
 
 a {
   text-decoration: none;
 }
 
 body {
-  height: 2000px;
+  height: 800px;
 }
