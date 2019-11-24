@@ -1,0 +1,45 @@
+.bike_draw {
+  background-color: #60be89;
+  width: 100%;
+  height: 500px;
+}
+.seoul {
+  /*border : 1px dotted black;*/
+  width: 326.25px;
+  height: 237.75px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.login-icon > img {
+  /*border : 1px dotted black;*/
+  width: 237.75px;
+  height: 237.75px;
+  position: absolute;
+  top: 7%;
+  right: 5%;
+  z-index: 1;
+}
+.bike {
+  /*border : 1px dotted black;*/
+  width: 450px;
+  position: absolute;
+  top: 25%;
+  left: 36%;
+}
+.together {
+  /*border : 1px dotted black;*/
+  width: 800px;
+  position: absolute;
+  top: 65%;
+  left: 23%;
+  z-index: 1;
+}
+.bottom-icon {
+  /*border : 1px dotted black;*/
+  width: 60px;
+  height: 32px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+}

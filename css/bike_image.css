@@ -1,9 +1,6 @@
-html {
-  background: url("../picture/background1.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.index_1 {
+  background: url("../picture/background.png");
+  background-size: 100%;
 }
 #introduction {
   position: relative;
@@ -23,12 +20,12 @@ html {
   font-weight: bolder;
 }
 #login-icon {
-  position: fixed;
+  position: absolute;
   float: right;
-  top: 30px;
-  right: 30px;
-  width: 200px;
-  height: 200px;
+  top: 6%;
+  right: 5%;
+  width: 237.75px;
+  height: 237.75px;
 }
 #logo {
   position: relative;
