@@ -15,6 +15,13 @@ article {
     position: relative;
 }
 
+.footer-img-borrow {
+    width: 80%;
+    height: 90%;
+    position: relative;
+    top: 300px;
+}
+
 /* 
 #container #footer {
     position: absolute;

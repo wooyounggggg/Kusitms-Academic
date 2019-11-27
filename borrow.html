@@ -39,13 +39,57 @@
             </nav>
         </div>
     </header>
-    <article>
-    <div id="map" class="map_borrow"></div>
-	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=490dd2fc2b419f4c2e1e872154d43de3&libraries=services,clusterer,drawing"></script>
-	<script src="./js/map_borrow.js"></script>
+    <article class="borrow-body font-nanum-square">
+        <!--<div id="map" class="map_borrow"></div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=490dd2fc2b419f4c2e1e872154d43de3&libraries=services,clusterer,drawing"></script>
+        <script src="./js/map_borrow.js"></script>-->
+        <div class="select_bar">
+            <span style="display:inline-block; width:290px; text-align:center;">
+                <span class="circle1">1</span>
+                <span>&nbsp&nbsp&nbsp&nbsp대여 방법 선택</span>
+            </span>
+            <img src="./picture/right-icon.png" alt=""width="12">
+
+            <span style="display:inline-block; width:290px; text-align:center;">
+                <span class="circle2">2</span>
+                <span>&nbsp&nbsp&nbsp&nbsp자전거 선택</span>
+            </span>
+            <img src="./picture/right-icon.png" alt=""width="12">
+
+            <span style="display:inline-block; width:290px; text-align:center;">
+                <span class="circle2">3</span>
+                <span>&nbsp&nbsp&nbsp&nbsp이용권 구매</span>
+            </span>
+            <img src="./picture/right-icon.png" alt=""width="12">
+
+            <span style="display:inline-block; width:290px; text-align:center;">
+                <span class="circle2">4</span>
+                <span>&nbsp&nbsp&nbsp&nbsp대여 완료</span>
+            </span>
+        </div>
+        <hr class="hr">
+        <div class="main_box">
+            <div class="select">     
+                <input type="radio" name="chk_info" value="HTML">&nbsp&nbsp즐겨찾는 대여소<br><br>
+                <input type="radio" name="chk_info" value="CSS">&nbsp&nbsp대여소 검색<br><br>
+                <input type="radio" name="chk_info" value="웹디자인">&nbsp&nbspQR코드로 대여하기
+            </div>
+            <div class="search">
+                <input type="text" list="location">
+                <datalist id="location">
+                    <option value="홍대입구역 2번출구 앞" style="width:500px;"></option>
+                    <option value="홍대입구역 8번출구 앞"></option>
+                    <option value="사루비아 빌딩 앞"></option>
+                </datalist>
+            </div>
+        </div>
+        <br>
+        <div style="text-align: center;">
+            <input type="button" value='다음' class='button'>
+        </div>
     </article>
     <footer>
-        <img src="./picture/footer.png" alt="" class="footer-img">
+        <img src="./picture/footer.png" alt="" class="footer-img-borrow">
     </footer>
 </body>
 </html>

@@ -8,6 +8,7 @@
 @import "index_cy.css";
 @import "index_mj.css";
 @import "loginPage.css";
+@import "borrow.css";
 
 a {
   text-decoration: none;
