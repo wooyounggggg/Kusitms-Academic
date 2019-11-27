@@ -1,51 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>함께타요 따릉이 2.0</title>
-</head>
-<body>
-    <header>
-        <div>
-            <a href="./home.html"><img src="./picture/logo.png" alt="" class= "centered" id="with-logo"></a>
-        </div>
-        <div>
-            <nav class="top-nav centered">
-                <ul class="font-nanum-square">
-                    <a href="./borrow.html" class="top-nav-link">
-                        <li>
-                            대여하기
-                        </li>
-                    </a>
-                    <a href="road.html" class="selected top-nav-link">
-                        <li>
-                            따릉이 길찾기
-                        </li>
-                    </a>
-                    <a href="community.html" class="top-nav-link">
-                        <li>
-                            커뮤니티
-                        </li>
-                    </a>
-                    <a href="crew.html" class="top-nav-link">
-                        <li>
-                            따릉이 크루
-                        </li>
-                    </a>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <article>
-        <div id="map" class="map_road"></div>
-        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=490dd2fc2b419f4c2e1e872154d43de3&libraries=services,clusterer,drawing"></script>
-        <script src="./js/map_road.js"></script>
-    </article>
-    <footer>
-        <img src="./picture/footer.png" alt="" class="footer-img">
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="shortcut icon" href="./picture/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="./picture/favicon.ico" type="image/x-icon" />
+        <title>함께타요 따릉이 2.0</title>
+        <meta name="description" content="http://127.0.0.1:8080" />
+    </head>
+    <body>
+        <header style="height: 29%;">
+            <div>
+                <a href="./home.html"><img src="./picture/logo.png" alt="" class="centered" id="with-logo"/></a>
+            </div>
+            <div>
+                <nav class="top-nav centered">
+                    <ul class="font-nanum-square">
+                        <a href="./borrow.html" class="top-nav-link">
+                            <li>
+                                대여하기
+                            </li>
+                        </a>
+                        <a href="road.html" class="selected top-nav-link">
+                            <li>
+                                따릉이 길찾기
+                            </li>
+                        </a>
+                        <a href="community.html" class="top-nav-link">
+                            <li>
+                                커뮤니티
+                            </li>
+                        </a>
+                        <a href="crew.html" class="top-nav-link">
+                            <li>
+                                따릉이 크루
+                            </li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <article>
+            <div class="font-nanum-square" style="font-weight: bold;">
+                <div class="roadSearchBar">
+                    <div
+                        class="input-group mb-3"
+                        style="position:relative; padding: 20px 20px; background-color: #5DB07F
+                    ;"
+                    >
+                        <div class="input-group-prepend" style="width: 70%">
+                            <span
+                                class="input-group-text"
+                                id="inputGroup-sizing-default"
+                                style="border-radius: 10px 0px 0px 10px; background-color: white; color:#5DB07F;"
+                                >출발지</span
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default"
+                                style="border-radius: 0px 0px 0px 0px;"
+                            />
+                            <span
+                                class="input-group-text"
+                                id="inputGroup-sizzing-default"
+                                style="border-radius: 0px 0px 0px 0px; background-color: white; color:#5DB07F;"
+                                >도착지</span
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default"
+                                style="border-radius: 0px 10px 10px 0px;"
+                            />
+                        </div>
+                        <div style="width: 10%">
+                            <button
+                                type="button"
+                                class="btn btn-default"
+                                style="margin-left: 30px; color: #5DB07F; background-color: white; border-radius: 10px;"
+                            >
+                                + 경유지
+                            </button>
+                        </div>
+                        <div style="width: 10%">
+                            <button
+                                type="button"
+                                class="btn btn-default"
+                                style="margin-left: 30px; color: white; background-color: #445464; border-radius: 10px;"
+                            >
+                                길찾기
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ee16237d28aafd38308a826d46183773"></script>
+
+                <div class="map_wrap">
+                    <div id="map" style="top:-15px; width:100%;height:100%;position:relative;overflow:hidden;"></div>
+
+                    <p id="result" style="top:500px;"></p>
+                </div>
+
+                <script src="./js/map_road.js"></script>
+            </div>
+        </article>
+        <footer>
+            <img src="./picture/footer.png" alt="" class="footer-img" />
+        </footer>
+    </body>
 </html>
