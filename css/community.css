@@ -1,0 +1,152 @@
+.bodywrap {
+  width: 1500px;
+  height: 600px;
+  padding-top: 230px;
+  margin-left: 0px;
+}
+.BoardButton {
+  width: 250px;
+  height: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  align-content: center;
+  font-weight: bold;
+  border: none;
+  background-color: #ffffff;
+}
+.rightboard {
+  margin-left: 250px;
+  width: 1500px;
+  height: 500px;
+  direction: flex;
+  flex-direction: column;
+}
+.rightboardTop {
+  padding-top: 10px;
+  width: 1500px;
+  height: 50px;
+  margin: auto;
+  margin-left: 0px;
+}
+.searchingBlock {
+  background: #e4e4e4;
+  height: 30px;
+  float: left;
+  margin-left: 700px;
+  width: 300px;
+  border: none;
+  border-radius: 20px;
+}
+.arrowImg {
+  margin-left: 50px;
+}
+.leftbarwrap {
+  width: 10px;
+  height: 30px;
+  direction: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.look-up {
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+.buttons2 {
+  padding-left: 25px;
+}
+.boardTitleImg {
+  padding-left: 8px;
+  float: left;
+}
+.img2 {
+  padding-left: 35px;
+}
+.searchingimg {
+  float: center;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+th {
+  padding: 15px 30px 5px 20px;
+  background: #5db07f;
+  height: 30px;
+  color: white;
+  font-weight: bold;
+}
+.itistitle {
+  width: 600px;
+}
+td {
+  background-color: #e4e4e4;
+  border-bottom: 2px solid #d8d8d8;
+}
+.commentTable {
+  margin-top: 10px;
+  width: 1250px;
+  height: 450px;
+  border-radius: 10px;
+}
+.tableNum {
+  padding-top: 10px;
+  padding-left: 50px;
+  color: black;
+}
+.numberTen {
+  padding-top: 10px;
+  padding-left: 45px;
+  padding-bottom: 5px;
+  color: black;
+}
+.write {
+  padding-left: 40px;
+  font-weight: 600;
+}
+.date {
+  padding-left: 70px;
+  font-weight: 600;
+}
+.seeNum {
+  padding-left: 50px;
+  font-weight: 600;
+}
+.BoardButton:hover {
+  animation: Fselected-hover 0.2s forwards;
+}
+.paging {
+  width: 600px;
+  margin: auto;
+  direction: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 500px;
+}
+.forPage {
+  list-style: none;
+  float: left;
+  display: inline;
+}
+.forPage .pagingnum {
+  float: left;
+}
+.forPage .pagingnum .thisisA {
+  float: left;
+  padding: 4px;
+  margin-right: 3px;
+  width: 15px;
+  color: #000;
+  font: bold 12px tahoma;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+}
+
+@keyframes Fselected-hover {
+  from {
+    background-color: white;
+  }
+
+  to {
+    background-color: #a0a0a0;
+  }
+}
