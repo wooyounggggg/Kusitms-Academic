@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./picture/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./picture/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
@@ -48,14 +50,16 @@
     </ul>
         </span>
         <span id="total2">
-    <div id="main1">
-            <img id="background" src="./picture/background.png" alt=""><br><br>
+        <div id="main1">
+            <img id="background" src="./picture/crew_background.png" alt=""><br><br>
             <img id="kusitms_logo" src="./picture/kusitms_logo.png" alt="">
             <input id="write" type="button" value="글쓰기">           
             <p id="title-info">
                 <img id="name_logo" src="./picture/name_logo.png"><br>
-                크루장: 김따릉<br>
-                육룡이 나르샤의 모임은 매주 금요일 오후 7시부터 9시까지 서울의 방방곡곡을 라이딩하는 크루입니다!</p>
+                <content class="crew-content">크루장: 김따릉<br>
+                육룡이 나르샤의 모임은 매주 금요일 오후 7시부터 9시까지 서울의 방방곡곡을 라이딩하는 크루입니다!
+                </content>
+            </p>
         </div>
         <div id="main2">
             <a href="#">
@@ -82,7 +86,7 @@
         </div>
     </span>
         <span id="total3">
-            <div id="my-crew">
+            <div id="my-crew" style="height:200px;">
                 <img id="profile" src="./picture/profile.png" alt="">
                     <div id="my-crew-info"><span id="my-crew-rank">따릉따릉 등급</span><br>
                         <span id="my-crew-name">김따릉 님</span></div>
@@ -96,7 +100,14 @@
                 </table>
             </div>
         </span>
-    <a href="#"><img id="chat" src="./picture/chat_button.png"></a>
+    <span id="chat-window">
+        <img src="./picture/chat-window.png" class="invisible"  id="chat-window-img">
+    </span>
+    <a href=""><img id="chat" src="./picture/chat_button.png"></a>
 </div>
+    <footer>
+        <img src="./picture/footer.png"  class="footer-img crew-footer">
+    </footer>
+    <script src="./js/crew.js"></script>
 </body>
 </html>

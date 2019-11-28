@@ -116,6 +116,7 @@
     /* background-color: #2E6D48; */
     /* color: #5DB07F; */
     animation: non-selected-hover 0.4s forwards;
+
 }
 
 .selected>li {
@@ -153,7 +154,6 @@
     margin: 0;
     width: 100%;
 }
-
 
 /*
 .fixed {

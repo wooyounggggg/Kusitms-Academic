@@ -1,243 +1,283 @@
 body {
-    font-family: 'NanumSquare', sans-serif;
+  font-family: "NanumSquare", sans-serif;
 }
 
 #container {
-    width: 100%;
-    height: 190px;
-    background-color: white;
-    position: fixed;
-    z-index: 1;
+  width: 100%;
+  height: 190px;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
 }
 
 #total {
-    position: relative;
-    /* z-index: 0; */
-    top: 100px;
+  position: relative;
+  /* z-index: 0; */
+  top: 100px;
 }
 
 #total1 {
-    /* float: left; */
-    display: inline-block;
-    width: 200px;
+  /* float: left; */
+  display: inline-block;
+  width: 200px;
 }
 
 #total2 {
-    display: inline-block;
-    width: 826px;
+  display: inline-block;
+  width: 826px;
 }
 
 #total3 {
-    display: inline-block;
-    width: 400px;
-    height: 100vh;
-    float: right;
-    background-color: #5DB07F;
-    position: fixed;
-    right: -69px;
-    top: 219px;
+  display: inline-block;
+  width: 381.7px;
+  height: 130vh;
+  float: right;
+  background-color: rgb(108, 199, 146);
+  position: absolute;
+  right: -69px;
+  top: 132px;
+  border-bottom-left-radius: 10px;
 }
 
 #total1-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #ffffff;
-    height: 100%;
-    position: fixed;
-    top: 237px;
-    text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #ffffff;
+  height: 100%;
+  position: fixed;
+  top: 237px;
+  text-align: center;
+}
+
+#chat-window-img {
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  width: 300px;
+  z-index: 3;
+}
+
+.invisible {
+  display: none;
 }
 
 #total1-ul .active {
-    font: bold;
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-decoration: none;
+  font: bold;
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
 }
 
 #crew-top-nav {
-    position: fixed;
-    z-index: 1;
+  position: fixed;
+  z-index: 1;
 }
 
 #total1-ul .active .menu-icon {
-    float: right;
-    width: 10px;
-    height: 10px;
+  float: right;
+  padding-right: 5px;
+  width: 10px;
+  height: 10px;
+}
+
+.crew-footer {
+  position: relative;
+  top: 1100px;
 }
 
 #total1-ul .active:hover {
-    background-color: #f1f1f1;
-    color: black;
+  background-color: #f1f1f1;
+  color: black;
 }
 
 #my-crew {
-    position: relative;
-    float: right;
-    /* width: 500px; */
-    top: 20px;
-    right: 120px;
-    color: #ffffff;
-    z-index: 3;
+  position: relative;
+  float: right;
+  /* width: 500px; */
+  top: 20px;
+  right: 120px;
+  color: #ffffff;
+  z-index: 0;
 }
 
 #my-crew #profile {
-    float: left;
+  float: left;
 }
 
 #main1 {
-    background-color: #F1F1F1;
-    position: absolute;
-    top: 500px;
-    z-index: 0;
+  /* background-color: #F1F1F1; */
+  position: absolute;
+  top: 580px;
+  z-index: 0;
 }
 
 .crew-with-logo {
-    position: fixed;
+  position: fixed;
 }
 
 #main1 #background {
-    width: 826px;
-    position: absolute;
-    top: 400px;
+  width: 834px;
+  position: absolute;
+  top: -467px;
 }
 
+/* #background {
+    top: 100px;
+} */
+
 #main1 #kusitms_logo {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 00px;
-    left: 230px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -350px;
+  left: 20px;
+  z-index: 3;
+}
+
+.crew-content {
+  position: relative;
+  top: 40px;
+  left: 10px;
 }
 
 #main1 #name_logo {
-    margin-top: 5px;
-    margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 10px;
+  left: 140px;
 }
 
 #main1 #title-info {
-    line-height: 1.5em;
-    padding-left: 150px;
-    padding-bottom: 25px;
+  line-height: 1.5em;
+  padding-left: 130px;
+  padding-bottom: 10px;
+  position: relative;
+  top: -344px;
+  height: 130px;
+  width: 100%;
+  background-color: #f1f1f1;
 }
 
 #main1 #write {
-    position: relative;
-    float: right;
-    font-size: small;
-    padding: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    right: 60px;
-    background-color: #3E8C5E;
-    border: 0px none white;
-    border-radius: 30px;
-    color: #ffffff;
+  position: absolute;
+  top: -295px;
+  z-index: 2;
+  float: right;
+  font-size: small;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  right: 30px;
+  background-color: #3e8c5e;
+  border: 0px none white;
+  border-radius: 30px;
+  color: #ffffff;
 }
 
 #main2 {
-    position: absolute;
-    top: 200px;
-    z-index: 0;
+  position: absolute;
+  top: 415px;
+  z-index: 0;
 }
 
 #main2 .box {
-    display: inline-block;
-    width: 265px;
-    border: 0px none white;
-    margin-top: 20px;
-    margin-left: 3px;
-    margin-right: 3px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px #a1a1a1;
-    text-decoration: none;
-    color: black;
+  display: inline-block;
+  width: 265px;
+  border: 0px none white;
+  margin-top: 20px;
+  margin-left: 3px;
+  margin-right: 3px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #a1a1a1;
+  text-decoration: none;
+  color: black;
 }
 
 #main2 .box .picture {
-    position: relative;
-    width: 255px;
-    top: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  position: relative;
+  width: 255px;
+  top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #main2 .box .content {
-    margin: 15px;
+  margin: 15px;
 }
 
 #main2 .small {
-    font-size: smaller;
+  font-size: smaller;
 }
 
 #my-crew {
-    background-color: #5DB07F;
-    width: 237px;
-    height: 100vh;
-    color: #ffffff;
-    text-align: center;
+  background-color: rgb(108, 199, 146);
+  width: 237px;
+  height: 100vh;
+  color: #ffffff;
+  text-align: center;
 }
 
 #my-crew-info {
-    padding-left: 60px;
-    padding-top: 30px;
+  padding-left: 60px;
+  padding-top: 30px;
 }
 
 #my-crew #profile {
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 15px;
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    top: 0px;
-    left: 0px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 15px;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 0px;
+  left: 0px;
 }
 
 #my-crew #my-crew-name {
-    display: inline-block;
-    font-weight: bold;
-    margin: 10px;
-    margin-bottom: 30px;
-    font-size: 23px;
+  display: inline-block;
+  font-weight: bold;
+  margin: 10px;
+  margin-bottom: 30px;
+  font-size: 23px;
 }
 
 #my-crew #my-crew-rank {
-    color: #2E6D48;
-    font-weight: bold;
-    font-size: 15px;
-    margin: 5px;
+  color: #2e6d48;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 5px;
 }
 
 #my-crew-table {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 #my-crew #my-crew-table .my {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 13px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 13px;
 }
 
 #my-crew .rank {
-    text-align: right;
-    padding: 10px;
-    font-size: 30px;
-    color: #2E6D48;
-    font-weight: bold;
+  text-align: right;
+  padding: 10px;
+  font-size: 30px;
+  color: #2e6d48;
+  font-weight: bold;
 }
 
-
 #chat {
-    position: fixed;
-    float: right;
-    width: 6%;
-    right: 10px;
-    bottom: 10px;
+  position: fixed;
+  float: right;
+  width: 6%;
+  right: 10px;
+  bottom: 10px;
+  z-index: 4;
 }
