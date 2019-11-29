@@ -13,8 +13,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="./css/style.css" />
-        <link rel="shortcut icon" href="./picture/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="./picture/favicon.ico" type="image/x-icon" />
         <title>함께타요 따릉이 2.0</title>
         <meta name="description" content="http://127.0.0.1:8080" />
     </head>
@@ -26,22 +24,22 @@
             <div>
                 <nav class="top-nav centered">
                     <ul class="font-nanum-square">
-                        <a href="./borrow.html" class="top-nav-link" style="text-decoration:none;">
+                        <a href="./borrow.html" class="top-nav-link">
                             <li>
                                 대여하기
                             </li>
                         </a>
-                        <a href="road.html" class="selected top-nav-link" style="text-decoration:none;">
+                        <a href="road.html" class="selected top-nav-link">
                             <li>
                                 따릉이 길찾기
                             </li>
                         </a>
-                        <a href="community.html" class="top-nav-link" style="text-decoration:none;">
+                        <a href="community.html" class="top-nav-link">
                             <li>
                                 커뮤니티
                             </li>
                         </a>
-                        <a href="crew.html" class="top-nav-link" style="text-decoration:none;">
+                        <a href="crew.html" class="top-nav-link">
                             <li>
                                 따릉이 크루
                             </li>
@@ -67,10 +65,11 @@
                             >
                             <input
                                 type="text"
-                                class="form-control"
+                                class="form-control font-nanum-square-round"
                                 aria-label="Sizing example input"
                                 aria-describedby="inputGroup-sizing-default"
                                 style="border-radius: 0px 0px 0px 0px;"
+                                value="신촌역";
                             />
                             <span
                                 class="input-group-text"
@@ -80,10 +79,11 @@
                             >
                             <input
                                 type="text"
-                                class="form-control"
+                                class="form-control font-nanum-square-round"
                                 aria-label="Sizing example input"
                                 aria-describedby="inputGroup-sizing-default"
                                 style="border-radius: 0px 10px 10px 0px;"
+                                value="kb락스타 청춘마루"
                             />
                         </div>
                         <div style="width: 10%">
@@ -95,8 +95,9 @@
                                 + 경유지
                             </button>
                         </div>
-                        <div style="width: 10%">
+                        <div id="roadImgDiv" style="width: 10%">
                             <button
+                                id="btn_search"
                                 type="button"
                                 class="btn btn-default"
                                 style="margin-left: 30px; color: white; background-color: #445464; border-radius: 10px;"
@@ -105,16 +106,35 @@
                             </button>
                         </div>
                     </div>
+                    <img
+                        class="invisible"
+                        id="roadImg"
+                        src="./picture/roadSearch.PNG"
+                        width="280px"
+                        height="620px"
+                        style="position:
+                        absolute; 
+                        right:0px;
+                        top : 310px;
+                        z-index : 2;"
+                    />
                 </div>
+                <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ed41c1457d085cdc95db83e94c691cac&libraries=services,clusterer,drawing"></script>
+                <script>
+                    var road_img = document.getElementById('roadImg');
 
-                <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ee16237d28aafd38308a826d46183773"></script>
-
+                    document.getElementById('btn_search').onclick = function() {
+                        road_img.classList.toggle("invisible");
+                    };
+                    
+                </script>
                 <div class="map_wrap">
                     <div id="map" style="top:-15px; width:100%;height:100%;position:relative;overflow:hidden;"></div>
 
                     <p id="result" style="top:500px;"></p>
                 </div>
 
+                <srcript src="./js/test.js"></srcript>
                 <script src="./js/map_road.js"></script>
             </div>
         </article>
