@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>함께타요 따릉이 2.0</title>
+    <style>
+      .bodywrap{
+          width: 1500px;
+          height: 600px;
+          padding-top: 230px;
+          margin-left: 0px; 
+      }
+      .BoardButton{
+          width:250px;
+          height: 70px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          padding-left: 20px;
+          align-content: center;
+          font-weight: bold;
+          border: none;
+          background-color:#FFFFFF;
+      } 
+      .rightboard{
+          margin-left: 250px;
+          width: 1500px;
+          height: 500px;
+          direction: flex;
+          flex-direction: column;
+          
+      }
+      .rightboardTop{
+          padding-top: 10px;
+          width: 1500px;
+          height: 50px;
+          margin: auto;
+          margin-left: 0px;
+      }
+      .searchingBlock{
+          background: #E4E4E4;
+          height: 30px;
+          float: left;
+          margin-left: 700px;
+          width: 300px;
+          border: none;
+          border-radius: 20px;
+      }
+      .arrowImg{
+          margin-left: 50px;
+      }
+      .leftbarwrap{
+          width: 10px;
+          height: 30px;
+          direction: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+      .buttons2 {
+          padding-left: 25px;
+      }
+      .boardTitleImg{
+          padding-left: 8px;
+          float: left;
+      }
+      .img2{
+          padding-left: 35px;
+      }
+      .searchingimg{
+          float: center;
+          padding-top: 5px;
+          padding-left: 10px;
+      }
+      .itisth{
+          padding:15px 30px 5px 20px;
+          background: #5DB07F;
+          height: 30px;
+          color: white;
+          font-weight: bold; 
+      }
+      .itistitle{
+          width: 600px;
+      }
+      .itistd {
+          background-color: #E4E4E4;
+          border-bottom: 2px solid #D8D8D8;
+      }
+      .commentTable{
+          margin-top: 10px;
+          width: 1250px;
+          height: 450px;
+          border-radius: 10px;
+      }
+      .tableNum{
+        padding-top: 10px;
+        padding-left: 50px;
+        color: black;
+      }
+      .numberTen{
+          padding-top: 10px;
+          padding-left: 45px;
+          padding-bottom: 5px;
+          color: black;
+      }
+      .write{
+          padding-left: 40px;
+          font-weight: 600;
+      }
+      .date{
+          padding-left: 70px;
+          font-weight: 600;
+      }
+      .seeNum{
+          padding-left: 50px;
+          font-weight: 600;
+      }
+      .BoardButton:hover{
+        animation: Fselected-hover 0.2s forwards;
+      }
+      .paging{
+          width: 600px;
+          margin: auto;
+          direction: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin-left: 500px;
+
+
+      }
+      .forPage{
+	    list-style:none;
+	    float:left;
+	    display:inline;
+        }
+      .forPage .pagingnum {
+	    float:left;
+        }
+      .forPage .pagingnum .thisisA {
+	    float:left;
+	    padding:4px;
+	    margin-right:3px;
+	    width:15px;
+	    color:#000;
+	    font:bold 12px tahoma;
+	    border:none;
+	    text-align:center;
+	    text-decoration:none;
+    }
+    
+      
+    @keyframes Fselected-hover {
+    from {
+        background-color: white;
+    }
+
+    to {
+        background-color: #a0a0a0;
+    }
+    
+}
+ 
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="./home.html"><img src="./picture/logo.png" alt="" class= "centered" id="with-logo"></a>
+        </div>
+        <div>
+            <nav class="top-nav centered">
+                <ul class="font-nanum-square">
+                    <a href="./borrow.html" class="top-nav-link">
+                        <li>
+                            대여하기
+                        </li>
+                    </a>
+                    <a href="road.html" class="top-nav-link">
+                        <li>
+                            따릉이 길찾기
+                        </li>
+                    </a>
+                    <a href="community.html" class="selected top-nav-link">
+                        <li>
+                            커뮤니티
+                        </li>
+                    </a>
+                    <a href="crew.html" class="top-nav-link">
+                        <li>
+                            따릉이 크루
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class ="bodywrap">
+        <div class="leftbarwrap">
+            <button class="BoardButton">따릉이 자유게시판<img  class="arrowImg"src="./picture/그룹화살표.png" width="10px" height="10px"></button>
+            <button class="BoardButton buttons2">크루 커뮤니티<img  class="arrowImg img2"src="./picture/그룹화살표.png" width="10px" height="10px"></button>
+        </div>
+        <div class="rightboard">
+            <div class="rightboardTop">
+                <div class="boardTitleImg"><img  class="boardTitleImg"src="./picture/따릉이 자유게시판.png" width="200px" height="30px"></div>
+                <input class="searchingBlock" type="text">
+                <input class="searchingimg" type="image" src="./picture/돋보기.png" width="20px" height="20px">
+            </div>
+            <div class="realBoard">
+                    <table class="commentTable">
+                            <th class="font-nanum-square-round itisth">번호</th>
+                            <th class="font-nanum-square-round itistitle itisth">제목</th>
+                            <th class="font-nanum-square-round itisth">첨부</th>
+                            <th class="font-nanum-square-round itisth">등록일</th>
+                            <th class="font-nanum-square-round itisth">조회수</th>
+                            <tr>
+                                <td class="tableNum itistd">1</td>
+                                <td class="write itistd">요즘 선유도공원 따릉이 정류소에 따릉이가 없네요</td>
+                                <td class="itistd"></td>
+                                <td class="date itistd">2019.11.25</td>
+                                <td class="seeNum itistd">324</td>
+                            </tr>
+                            <tr>
+                                <td class="tableNum itistd">2</td>
+                                <td class="write itistd">강북지역 따릉이 타기 좋은 곳 추천해주세요!</td>
+                                <td class="itistd"></td>
+                                <td class="date itistd">2019.11.25</td>
+                                <td class="seeNum itistd">511</td>
+                            </tr>
+                            <tr>
+                                <td class="tableNum itistd">3</td>
+                                <td class="write itistd">따릉이 이용권 구매 질문 있어요!</td>
+                                <td class="itistd"></td>
+                                <td class="date itistd">2019.11.24</td>
+                                <td class="seeNum itistd">245</td>
+                            </tr>
+                            <tr>
+                                <td class="tableNum itistd">4</td>
+                                <td class="write itistd">따릉이 네비게이션 기능 있으면 좋겠어요.</td>
+                                <td class="itistd"></td>
+                                <td class="date itistd">2019.11.20</td>
+                                <td class="seeNum itistd">123</td>
+                            </tr>
+                            <tr>
+                                <td class="tableNum itistd">5</td>
+                                <td class="write itistd">인증번호 입력이 안돼요. 화나네...</td>
+                                <td class="itistd"></td>
+                                <td class="date itistd">2019.11.20</td>
+                                <td class="seeNum itistd">500</td>
+                            </tr>
+                            <tr>
+                                <td class="tableNum itistd">6</td>
+                                <td class="write itistd">반납했는데 반납이 안됐다고 뜨네요ㅡㅡ</td>
+                                <td class="itistd"></td>
+                                <td class="date itistd">2019.11.20</td>
+                                <td class="seeNum itistd">399</td>
+                            </tr>
+                            <tr>
+                                <td class="tableNum itistd">7</td>
+                                <td class="write itistd">앞바퀴에 빵꾸났어요 ㄴㅇㄱ!!</td>
+                                <td class="itistd"></td>
+                                <td class="date itistd">2019.11.19</td>
+                                <td class="seeNum itistd">2059</td>
+                            </tr>
+                            <tr>
+                                <td class="tableNum itistd">8</td>
+                                <td class="write itistd">따릉이로 인해서 도시의 공기가 맑아졌어요. 서울특별시 사랑해요♥</td>
+                                <td class="itistd"></td>
+                                <td class="date itistd">2019.11.19</td>
+                                <td class="seeNum itistd">295</td>
+                            </tr>
+                            <tr>
+                                <td class="tableNum itistd">9</td>
+                                <td class="write itistd">여기 알게된 이후로 따릉이 탈 맛이 더 나네요 ㅎㅎ</td>
+                                <td class="itistd"></td>
+                                <td class="date itistd">2019.11.19</td>
+                                <td class="seeNum itistd">324</td>
+                            </tr>
+                            <tr>
+                                <td class="numberTen itistd">10</td>
+                                <td class="write itistd">따릉이 타고 놀러 가고 싶다~~~~~~~~</td>
+                                <td class="itistd"></td>
+                                <td class="date itistd">2019.11.18</td>
+                                <td class="seeNum itistd">122</td>
+                            </tr>
+                        </table>
+            </div>
+            <div class="paging font-nanum-square">
+                <div class="greenArrow"><img  class="boardTitleImg"src="./picture/다각형.png" width="10px" height="10px"></div>
+                    <ul class="forPage font-nanum-square">  
+                            <li class="pagingnum"><a class="thisisA" href="#">1</a></li>  
+                            <li class="pagingnum"><a class="thisisA" href="#">2</a></li>  
+                            <li class="pagingnum"><a class="thisisA" href="#">3</a></li>  
+                            <li class="pagingnum"><a class="thisisA" href="#">4</a></li>  
+                            <li class="pagingnum"><a class="thisisA" href="#">5</a></li>  
+                            <li class="pagingnum"><a class="thisisA" href="#">6</a></li>  
+                            <li class="pagingnum"><a class="thisisA" href="#">7</a></li>  
+                            <li class="pagingnum"><a class="thisisA" href="#">8</a></li>  
+                            <li class="pagingnum"><a class="thisisA" href="#">9</a></li>  
+                            <li class="pagingnum"><a class="thisisA" href="#">10</a></li>  
+                    </ul>
+            </div>
+            
+        </div>
+
+    </div>
+    <article>
+    </article>
+    <footer>
+        <img src="./picture/footer.png" alt="" class="footer-img">
+    </footer>
+</body>
+</html>
